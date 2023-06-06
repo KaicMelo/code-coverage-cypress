@@ -1,5 +1,6 @@
 dist/
 node_modules/
+cypress-coverage/
 obj/
 logs/
 *.log
