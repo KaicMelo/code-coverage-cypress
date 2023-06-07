@@ -1,5 +1,7 @@
+import { AppComponent } from '../../src/app/app.component';
+
 describe('template spec', () => {
   it('passes', () => {
-    cy.visit('https://example.cypress.io')
-  })
-})
+    cy.visity('https://example.cypress.io');
+  });
+});
