@@ -34,23 +34,5 @@
     "s": {},
     "f": {},
     "b": {}
-  },
-  "C:/Users/kakak/OneDrive/Documents/Aplicacoes/Cypress/code-coverage-cypress/src/app/button/button.component.ts": {
-    "path": "C:/Users/kakak/OneDrive/Documents/Aplicacoes/Cypress/code-coverage-cypress/src/app/button/button.component.ts",
-    "statementMap": {},
-    "fnMap": {},
-    "branchMap": {},
-    "s": {},
-    "f": {},
-    "b": {}
-  },
-  "C:/Users/kakak/OneDrive/Documents/Aplicacoes/Cypress/code-coverage-cypress/src/app/button/button.module.ts": {
-    "path": "C:/Users/kakak/OneDrive/Documents/Aplicacoes/Cypress/code-coverage-cypress/src/app/button/button.module.ts",
-    "statementMap": {},
-    "fnMap": {},
-    "branchMap": {},
-    "s": {},
-    "f": {},
-    "b": {}
   }
 }

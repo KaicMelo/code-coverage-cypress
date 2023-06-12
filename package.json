@@ -30,6 +30,7 @@
     "@angular/cli": "~15.2.5",
     "@angular/compiler-cli": "^15.2.0",
     "@cypress/code-coverage": "^3.10.7",
+    "@cypress/schematic": "^2.5.0",
     "@istanbuljs/nyc-config-typescript": "^1.0.2",
     "@types/jasmine": "~4.3.0",
     "babel-plugin-istanbul": "^6.1.1",
