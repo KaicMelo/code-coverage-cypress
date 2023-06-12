@@ -11,7 +11,14 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-builders/custom-webpack:browser",
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true,
+          "vendorChunk": true,
+          "customWebpackConfig": {
+            "path": "./cypress/coverage.webpack.ts"
+          },
           "options": {
             "outputPath": "dist/code-coverage-cypress",
             "index": "src/index.html",
@@ -127,15 +134,41 @@
         "e2e": {
           "builder": "@cypress/schematic:cypress",
           "options": {
-            "devServerTarget": "code-coverage-cypress:serve",
+            "devServerTarget": "code-coverage-cypress:serve-coverage",
             "watch": true,
             "headless": false
           },
           "configurations": {
             "production": {
-              "devServerTarget": "code-coverage-cypress:serve:production"
+              "devServerTarget": "code-coverage-cypress:serve-coverage:production"
             }
           }
+        },
+        "e2e-ci": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "browser": "chrome",
+            "devServerTarget": "code-coverage-cypress:serve-coverage",
+            "headless": true,
+            "watch": false
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "code-coverage-cypress:serve-coverage:production"
+            }
+          }
+        },
+        "serve-coverage": {
+          "builder": "@angular-builders/custom-webpack:dev-server",
+          "options": {
+            "browserTarget": "code-coverage-cypress:build:e2e"
+          },
+          "configurations": {
+          "development": {
+            "browserTarget": "code-coverage-cypress:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
         }
       }
     }

@@ -8,8 +8,10 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "e2e": "ng e2e",
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "cypress": "cypress open",
+    "cypress:run": "cypress run",
+    "e2e:ci": "ng run code-coverage-cypress:e2e-ci",
+    "e2e:coverage": "npx nyc report --reporter=lcov --reporter=text-summary"
   },
   "private": true,
   "dependencies": {
@@ -26,10 +28,12 @@
     "zone.js": "~0.12.0"
   },
   "devDependencies": {
+    "@angular-builders/custom-webpack": "^16.0.0",
     "@angular-devkit/build-angular": "^15.2.5",
     "@angular/cli": "~15.2.5",
     "@angular/compiler-cli": "^15.2.0",
     "@cypress/code-coverage": "^3.10.7",
+    "@cypress/schematic": "^2.5.0",
     "@istanbuljs/nyc-config-typescript": "^1.0.2",
     "@jsdevtools/coverage-istanbul-loader": "^3.0.5",
     "@types/jasmine": "~4.3.0",
