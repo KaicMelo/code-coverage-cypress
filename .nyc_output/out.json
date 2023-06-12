@@ -1,0 +1,29 @@
+{
+  "C:/Users/kakak/OneDrive/Documents/Aplicacoes/Cypress/code-coverage-cypress/cypress.config.ts": {
+    "path": "C:/Users/kakak/OneDrive/Documents/Aplicacoes/Cypress/code-coverage-cypress/cypress.config.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "C:/Users/kakak/OneDrive/Documents/Aplicacoes/Cypress/code-coverage-cypress/src/app/app.component.ts": {
+    "path": "C:/Users/kakak/OneDrive/Documents/Aplicacoes/Cypress/code-coverage-cypress/src/app/app.component.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  },
+  "C:/Users/kakak/OneDrive/Documents/Aplicacoes/Cypress/code-coverage-cypress/src/app/app.module.ts": {
+    "path": "C:/Users/kakak/OneDrive/Documents/Aplicacoes/Cypress/code-coverage-cypress/src/app/app.module.ts",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {}
+  }
+}

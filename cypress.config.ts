@@ -1,23 +1,12 @@
-import { defineConfig } from 'cypress'
-import registerCodeCoverageTasks from '@cypress/code-coverage/task' ;
+import { defineConfig } from "cypress";
+import task from '@cypress/code-coverage/task' ;
 
 export default defineConfig({
-
   e2e: {
     setupNodeEvents(on, config) {
-      registerCodeCoverageTasks(on, config);
+      task(on, config);
       return config;
     },
     'baseUrl': 'http://localhost:4200'
-  },
-
-
-  component: {
-    devServer: {
-      framework: 'angular',
-      bundler: 'webpack',
-    },
-    specPattern: '**/*.cy.ts'
   }
-
-})
+});

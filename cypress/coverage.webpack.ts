@@ -1,5 +1,6 @@
 import * as path from 'path';
 
+console.log(__dirname)
 export default {
   module: {
     rules: [
